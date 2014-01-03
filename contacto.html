@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Contacto Grupo Get</title>
+	<link rel="stylesheet" type="text/css" href="stylos/estilos.css">
+	<link href="stylos/normalize.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="j/prefixfree.min.js"></script>
+	<script src="j/functions.js"></script>
+</head>
+<body>
+	<section id='fondo'>
+		<img src="img/call.png">
+	</section>
+	<section id='fondo1'>
+		<img src="img/fondo-1.png">
+	</section>
+	<section id='contenedor'>
+		<h1>CONTACTO:</h1>
+		<article>
+			Antes de 24 horas, nos comunicaremos con usted para dar respuesta a su comunicación.
+			<form>
+				<label class='medio'>Nombre y Apellido</label>
+				<label class='medio'>Correo Electronico</label>
+				<input class='medio' id='cNombre' type='text'>
+				<input class='medio' id='cEmail' type='email'>
+				<label class='medio'>Numero Telefonico</label>
+				<label class='medio'>Ciudad</label>
+				<input class='medio' id='cTelefono' type='text'>
+				<input class='medio' id='ciudad' type='text'>
+				<label class='medio'>Empresa</label>
+				<label class='medio'>Asunto</label>
+				<input class='medio'id='cEmpresa' type='text'>
+				<select class='medio' id='cAsunto'>
+					<option value='0'>Seleccionar</option>
+					<option value='4'>Felicitación</option>
+					<option value='2'>Queja</option>
+					<option value='3'>Reclamo</option>
+					<option value='6'>Renta</option>
+					<option value='1'>Solicitud de Cotización</option>
+					<option value='5'>Solicitud de Mantenimiento</option>
+				</select>
+				<label class='completo'for='mensaje'>Mensaje</label>
+				<textarea class='completo'id='mensaje'></textarea>
+				<input type='submit' value='Enviar Comunicación'>
+			</form>
+		</article>
+	</section>
+	<nav>
+		<ul id='barra'>
+			<li id='serTecnico'></li>
+			<li id='catalogo'></li>
+			<li id='equipos'></li>
+			<li id='catalogo1'></li>
+		</ul>
+	</nav>
+	<ul id='bton1'>
+		<li id='home' title='Volver al Inicio'>
+			<a href="index.php">
+				<img id='imagen-objetivos' src="img/home-off.png">
+			</a>
+		</li>
+	</ul>
+	<div id='redes'></div>
+</body>
+</html>
