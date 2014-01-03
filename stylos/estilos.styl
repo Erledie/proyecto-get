@@ -44,7 +44,24 @@ ul
 	margin 0px!important
 	padding 0px!important
 
-	background-position -80px 0px	
+	background-position -80px 0px
+#left-Carrusel
+	position absolute
+	top 65%
+	left 17%
+	color white
+	font-size 2.5em
+	z-index 10
+	width 10px
+
+#right-Carrusel
+	position absolute
+	top 65%
+	left 85%
+	color white
+	font-size 2.5em
+	z-index 10
+	width 10px
 #carrusel
 	//border solid black
 	background white
@@ -57,16 +74,12 @@ ul
 	top 50%
 	width 63%
 	z-index 10
+	transition all 0.5s ease-in-out
 	&:after
 		border-right 30px solid transparent
 		border-left 30px solid transparent
 		border-top 20px solid white
 		content ""
-		left 5%
-		position absolute
-		bottom -20px
-	&:after
-		content ">"
 		left 5%
 		position absolute
 		bottom -20px

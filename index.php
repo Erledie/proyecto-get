@@ -9,9 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="stylos/estilos.css">
 </head>
 <body>
+	<div id='left-Carrusel'><</div>
+	<div id='right-Carrusel'>></div>	
 	<section id='carrusel'>
 		<div>
-			<ul>
+			<ul id='carru'>
 				<li></li>
 				<li></li>
 				<li></li>

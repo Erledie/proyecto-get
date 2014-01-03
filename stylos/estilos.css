@@ -4,9 +4,10 @@ nav{background:#030e4f;border-radius:0 .5em 0 0;bottom:0;box-shadow:rgba(3,14,79
 nav li{background:url("../img/botoneras.png") no-repeat;display:inline-block;height:80px;margin:0 5%;position:relative;top:-20px;vertical-align:middle;width:80px}
 textarea{height:4em}
 ul{list-style:none;margin:0 !important;padding:0 !important;background-position:-80px 0}
-#carrusel{background:#fff;border-radius:.5em;height:200px;left:20%;padding:.5em;position:absolute;top:50%;width:63%;z-index:10;}
+#left-Carrusel{position:absolute;top:65%;left:17%;color:#fff;font-size:2.5em;z-index:10;width:10px}
+#right-Carrusel{position:absolute;top:65%;left:85%;color:#fff;font-size:2.5em;z-index:10;width:10px}
+#carrusel{background:#fff;border-radius:.5em;height:200px;left:20%;padding:.5em;position:absolute;top:50%;width:63%;z-index:10;transition:all .5s ease-in-out;}
 #carrusel:after{border-right:30px solid transparent;border-left:30px solid transparent;border-top:20px solid #fff;content:"";left:5%;position:absolute;bottom:-20px}
-#carrusel:after{content:">";left:5%;position:absolute;bottom:-20px}
 #carrusel div{hidden:100%;overflow:hidden;width:100%;}
 #carrusel div ul{height:100%;white-space:nowrap;}
 #carrusel div ul li{border-radius:.5em;margin:25px 2em;display:inline-block;height:150px;width:150px;background:#f00}

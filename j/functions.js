@@ -7,6 +7,11 @@ function inicio(){
     $('#vision').on('click', mostrarEmpresarial);
     $('#objetivos').on('click', mostrarEmpresarial);
     $('#outsorcing').draggable();
+    $('#left-Carrusel').on('click', function(){
+    	$("#carru").animate({"left":"+=150px"},2000,'',function(){
+    		console.log('prueba');
+    	})
+    });
 }
 function abrirredes(){
 	var tamRedes = $('#redes').innerWidth();
