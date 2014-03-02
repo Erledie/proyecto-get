@@ -51,7 +51,7 @@ $totalRows_consulta_descripcion = mysql_num_rows($consulta_descripcion);
 <html lang="es">
 <head>
 	<meta charset='utf-8' />
-	<title>Mantenimiento de Equipos Grupo Get</title>
+	<title><?php echo $_GET['c_nombre']; ?> || Equipos de Impresión Grupo Get</title>
 	<link rel="stylesheet" type="text/css" href="stylos/estilos.css">
 	<link href="stylos/normalize.css" rel="stylesheet" type="text/css">
 	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
@@ -69,12 +69,12 @@ $totalRows_consulta_descripcion = mysql_num_rows($consulta_descripcion);
 	<section id='contenedor'>
 		<h1><?php echo $_GET['c_nombre']; ?></h1>
 		<article>
-			<p><?php echo $row_consulta_productos['c_descripcion']; ?></p>
+			<p><?php echo utf8_encode($row_consulta_productos['c_descripcion']); ?></p>
 			<ul>
 				<?php do{ ?>
 				<li>
 					<div class="titulo"><?php echo utf8_encode($row_consulta_descripcion['c_caracteristica']); ?></div>
-					<div><?php echo utf8_decode($row_consulta_descripcion['c_descripcion']); ?></div>
+					<div><?php echo utf8_encode($row_consulta_descripcion['c_descripcion']); ?></div>
 				</li>
 				<?php }while ($row_consulta_descripcion = mysql_fetch_assoc($consulta_descripcion)); ?>
 			</ul>
