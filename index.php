@@ -9,24 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="stylos/estilos.css">
 </head>
 <body>
-	<div id='left-Carrusel'><</div>
-	<div id='right-Carrusel'>></div>	
-	<section id='carrusel'>
-		<div>
-			<ul id='carru'>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-	</section>
 	<section id='fondo'>
 		<img src="img/imagen-home.png" id='imagen-index'>
 	</section>
@@ -46,7 +28,7 @@
 		<a href="">
 			<li id='catalogo'></li>
 		</a>
-		<a href="venta-de-equipos.html">
+		<a href="#" id='link-equipos'>
 			<li id='equipos'></li>
 		</a>
 	</nav>
@@ -75,7 +57,7 @@
 	<div id='otros'>
 		<a href="renta-equipos-de-impresion.html"  title='ir a Renta de Equipos'>
 			<h2>Renta</h2>
-			<img id='imagen-otros' src="img/ventas.png">
+			<img id='imagen-otros' src="img/bton_renta.png">
 		</a>
 	</div>
 	<div id='redes'></div>

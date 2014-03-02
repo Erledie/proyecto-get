@@ -1,3 +1,4 @@
+a{color:#000;text-decoration:none}
 body{background:#1d2b5b;font-family:arial;font-size:16px;width:100%;height:100%;overflow:hidden}
 li{list-style:none}
 nav{background:#030e4f;border-radius:0 .5em 0 0;bottom:0;box-shadow:rgba(3,14,79,0.5) 0 -5px 5px;height:70px;padding:0 2em;position:absolute;width:35%;z-index:4;}
@@ -5,19 +6,26 @@ nav li{background:url("../img/botoneras.png") no-repeat;display:inline-block;hei
 textarea{height:4em}
 ul{list-style:none;margin:0 !important;padding:0 !important;background-position:-80px 0}
 #left-Carrusel{position:absolute;top:65%;left:17%;color:#fff;font-size:2.5em;z-index:10;width:10px}
-#right-Carrusel{position:absolute;top:65%;left:85%;color:#fff;font-size:2.5em;z-index:10;width:10px}
-#carrusel{background:#fff;border-radius:.5em;height:200px;left:20%;padding:.5em;position:absolute;top:50%;width:63%;z-index:10;transition:all .5s ease-in-out;}
+#right-Carrusel{position:absolute;top:65%;left:83%;color:#fff;font-size:2.5em;z-index:10;width:10px}
+#carrusel{background:#fff;border-radius:.5em;height:200px;left:20%;padding:.5em;position:absolute;top:50%;width:820px;z-index:10;transition:all .5s ease-in-out;}
 #carrusel:after{border-right:30px solid transparent;border-left:30px solid transparent;border-top:20px solid #fff;content:"";left:5%;position:absolute;bottom:-20px}
 #carrusel div{hidden:100%;overflow:hidden;width:100%;}
-#carrusel div ul{height:100%;white-space:nowrap;}
-#carrusel div ul li{border-radius:.5em;margin:25px 2em;display:inline-block;height:150px;width:150px;background:#f00}
-#catalogo,#equipos,#serTecnico{transition:all .2s ease-in-out;}
-#catalogo:hover,#equipos:hover,#serTecnico:hover{transform:scale(1.5) translate(-5px,-5px) rotate(-10deg)}
+#carrusel div ul{height:100%;white-space:nowrap;position:relative;}
+#carrusel div ul li{background:#fff;border-radius:.5em;display:inline-block;height:150px;margin:25px 10px;overflow:hidden;transition:all .5s ease-in-out;padding:.5em;width:170px;text-align:center;}
+#carrusel div ul li img{display:inline-block;height:70%;width:70%;margin:5% 15%}
+#carrusel div ul li:hover{background:#424554;}
+#carrusel div ul li:hover a{color:#fff !important}
+#equipos,#serTecnico{transition:all .2s ease-in-out;}
+#equipos:hover,#serTecnico:hover{transform:scale(1.5) translate(-5px,-5px) rotate(-10deg)}
 #catalogo{background-position:-80px 0}
 #equipos{background-position:-160px 0}
 #serTecnico{background-position:0 0}
-#contenedor{position:absolute;width:40%;height:80%;right:0;top:5%;z-index:3;color:#293366;}
+#contenedor{position:absolute;width:50%;height:80%;right:20px;top:5%;z-index:3;color:#293366;}
+#contenedor article{height:90%;text-align:justify;margin:1em 2em 0 0;overflow:auto;padding:0 .5em;width:85%;}
 #contenedor article form label,#contenedor article form input{display:inline-block;vertical-align:top}
+#contenedor article ul li{margin:0 0 0 1em;list-style:none;}
+#contenedor article ul li div{display:inline-block;vertical-align:top}
+#contenedor article ul li .titulo{width:150px;font-weight:bold}
 #contenedor h1{color:#f57710;font-family:'Pathway Gothic One',sans-serif;font-size:60px;text-shadow:#050505 -2px 2px 5px;margin:auto}
 #contenedor input[type='text'],#contenedor input[type='email'],#contenedor textarea,#contenedor select{background:#293366;color:#fff;padding:.5em;width:90%;margin:auto auto .5em}
 #equipos{background-position:-160px 0}
@@ -32,7 +40,9 @@ ul{margin:0;list-style:none}
 #mision{right:15%}
 #fondo,#fondo1{height:100%;margin:0;left:0;padding:0;position:absolute;top:0;width:100%;}
 #fondo img,#fondo1 img{position:relative;height:100%;z-index:2}
+#fondo #img-producto,#fondo1 #img-producto{height:70%;margin:2%}
 #fondo #imagen-index,#fondo1 #imagen-index{height:68%;width:75%;float:right;position:relative;right:0}
+#fondo{background:#fff;}
 #fondo img{height:90%}
 #fondo1{z-index:3;}
 #fondo1 img{height:100%;width:100%}
@@ -40,11 +50,12 @@ ul{margin:0;list-style:none}
 #fondo-index #arriba{height:65%;width:100%;overflow:hidden;}
 #fondo-index #arriba img{display:inline-block;vertical-align:top}
 #fondo-index #arriba #logo{height:100%;position:relative;z-index:3}
-#fondo-index #abajo{background:-webkit-linear-gradient(top,#484848,#bfbfbf);height:35%;width:100%;text-align:center;font-size:1.5em;color:#fff;position:relative}
+#fondo-index #abajo{background:-webkit-linear-gradient(top,#484848,#bfbfbf);background:-ms-linear-gradient(top,#484848,#bfbfbf);background:-o-linear-gradient(top,#484848,#bfbfbf);background:-moz-linear-gradient(top,#484848,#bfbfbf);background:linear-gradient(top,#484848,#bfbfbf);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#484848', endColorstr='#bfbfbf', gradientType='0')";height:35%;width:100%;text-align:center;font-size:1.5em;color:#fff;position:relative;z-index:2}
+#fondoOscuro{background:rgba(0,0,0,0.8);height:100%;position:absolute;width:100%;z-index:5}
 #infoEmpresarial{background:rgba(3,15,79,0.8);border-radius:.5em;box-shadow:rgba(255,255,255,0.5) .5em .5em .5em;color:#fff;height:0;max-height:70%;min-width:400px;right:5%;padding:0 1em 1em;position:absolute;top:20%;transition:all .5s ease-in-out;width:35%;z-index:3;overflow:hidden;}
 #infoEmpresarial article{text-align:justify;max-height:400px;width:90%;margin:.2em auto;padding:.5em;overflow:auto}
-#otros,#outsorcing{border-radius:60px;cursor:pointer;height:120px;left:30%;position:absolute;top:12%;transition:all .5s ease-in-out;width:120px;z-index:4;overflow:hidden;vertical-align:middle;text-align:right;color:none;}
-#otros h2,#outsorcing h2{position:absolute;z-index:-1;color:none;margin:45px 1em}
+#otros,#outsorcing{border-radius:60px;cursor:pointer;height:120px;left:30%;position:absolute;top:12%;transition:all .5s ease-in-out;width:120px;z-index:4;overflow:hidden;vertical-align:middle;text-align:right;color:transparent;}
+#otros h2,#outsorcing h2{position:absolute;z-index:-1;color:transparent;margin:45px 1em}
 #otros:hover h2,#outsorcing:hover h2{color:#fff;z-index:1}
 #outsorcing:hover{background:#000;width:360px}
 #outsorcing img{width:120px;height:120px}

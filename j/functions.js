@@ -6,12 +6,13 @@ function inicio(){
     $('#mision').on('click', mostrarEmpresarial);
     $('#vision').on('click', mostrarEmpresarial);
     $('#objetivos').on('click', mostrarEmpresarial);
-    $('#outsorcing').draggable();
+    //$('#outsorcing').draggable();
     $('#left-Carrusel').on('click', function(){
     	$("#carru").animate({"left":"+=150px"},2000,'',function(){
     		console.log('prueba');
     	})
     });
+    $('#link-equipos').on('click', motrarCarrusel);
 }
 function abrirredes(){
 	var tamRedes = $('#redes').innerWidth();
@@ -51,7 +52,6 @@ function mostrarEmpresarial(datos){
 		setTimeout(function(){
 			$('#infoEmpresarial').remove();
 			pedirInfoEmpresarial(s_pagina);
-			console.log('prueba');
 		},600);
 	}else{
 		pedirInfoEmpresarial(s_pagina);
@@ -60,7 +60,6 @@ function mostrarEmpresarial(datos){
 function pedirInfoEmpresarial(s_pag){
 	$('body').append("<div id='infoEmpresarial'></div>");
 	$('#cerrar').on('click', function(){
-		console.log('cierra');
 		$('#infoEmpresarial').css('height','0px');
 		$('#infoEmpresarial').remove();
 	});
@@ -71,4 +70,29 @@ function pedirInfoEmpresarial(s_pag){
 	  		$('#infoEmpresarial').css('height','350px');
 	  	}
 	});	
+}
+function  motrarCarrusel(){
+	var contenido ="<div id='left-Carrusel'><</div><div id='right-Carrusel'>></div><section id='carrusel'><div><ul id='carru'></ul></div></section>";
+	$('body').append("<div id='fondoOscuro'></div>");
+	$('body').append(contenido);
+	$('#carru').load("j/productos.php", function( response, status, xhr ) {
+		if ( status == "error" ) {
+	    	alert('Ocurrio un error al consultar!!');
+	    }
+	});
+	$('#fondoOscuro').on('click', function(){
+    		$("#carrusel").remove();
+    		$("#left-Carrusel").remove();
+    		$("#right-Carrusel").remove();
+    		$("#fondoOscuro").remove();
+    	}
+    );
+    $('#left-Carrusel').on('click', function(){
+    	console.log('hey!, Triunfo');
+    	$("#carru").animate({"left":"+=-215px"},1000);
+    });
+	$('#right-Carrusel').on('click', function(){
+    	console.log('hey!, Aca Tambien Triunfo');
+    	$("#carru").animate({"left":"+=215px"},1000);
+    });
 }
