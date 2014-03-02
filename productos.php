@@ -50,11 +50,11 @@ $totalRows_consulta_descripcion = mysql_num_rows($consulta_descripcion);
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8" />
+	<meta charset='utf-8' />
 	<title>Mantenimiento de Equipos Grupo Get</title>
 	<link rel="stylesheet" type="text/css" href="stylos/estilos.css">
 	<link href="stylos/normalize.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="j/prefixfree.min.js"></script>
 	<script src="j/functions.js"></script>
@@ -73,7 +73,7 @@ $totalRows_consulta_descripcion = mysql_num_rows($consulta_descripcion);
 			<ul>
 				<?php do{ ?>
 				<li>
-					<div class="titulo"><?php echo utf8_decode($row_consulta_descripcion['c_caracteristica']); ?></div>
+					<div class="titulo"><?php echo utf8_encode($row_consulta_descripcion['c_caracteristica']); ?></div>
 					<div><?php echo utf8_decode($row_consulta_descripcion['c_descripcion']); ?></div>
 				</li>
 				<?php }while ($row_consulta_descripcion = mysql_fetch_assoc($consulta_descripcion)); ?>
